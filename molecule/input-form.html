@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>input</title>
+    <link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+<body>
+    <div class="input-form">
+        <form action="submit" class="input-form__form">
+            <h1 class="input-form__heading">Add an item</h1>
+
+            <div class="input-form__container">
+                <label for="itemName" class="input-form__label">Item Name:</label>
+                <input type="text" id="itemName" placeholder="Enter item name" class="input-form__input"  required>
+            </div>
+    
+            <div class="input-form__container">
+                <label for="itemPrice" class="input-form__label">Item Price:</label>
+                <input type="number" id="itemPrice" placeholder="Enter item price" class="input-form__input" required>
+            </div>
+
+            <button type="button" class="input-form__button" onclick="addItemToCart()">Add to Cart</button>
+        </form>
+    </div>
+</body>
+</html>

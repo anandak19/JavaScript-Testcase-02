@@ -1,0 +1,85 @@
+.input-form{
+    background-color: #007da7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 0;
+
+    &__form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__heading{
+        color: #FFFFFF;
+        font-size: 32px;
+        font-weight: 800;
+        text-align: center;
+        margin-bottom: 18px;
+    }
+
+    &__container{
+        margin-bottom: 20px;
+        display: flex;
+        width: 478px;
+        align-items: center;
+    }
+
+    &__label{
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+        font-size: 22px;
+        width: 192px;
+        color: #FFFFFF;
+    }
+    &__input{
+        width: 100%;
+        padding: 10px;
+        box-sizing: border-box;
+        border: 1px solid #ccc;
+        font-size: 16px;
+        outline: none;
+    }
+    &__button{
+        background-color: #0db613;
+        color: #FFFFFF;
+        padding: 15px 58px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+        font-weight: 600;
+        margin-top: 8px;
+    }
+    &__button:hover {
+        background-color: #0a9510;
+    }
+}
+
+@include mobile{
+    .input-form{
+        height: 100dvh;
+    
+        &__heading{
+            font-size: 28px;
+            margin-bottom: 16px;
+        }
+    
+        &__container{
+            margin-bottom: 20px;
+            width: 500px;
+        }
+    
+        &__label{
+            margin-bottom: 5px;
+            font-size: 18px;
+            width: 164px;
+        }
+        &__input{
+            padding: 8px;
+            font-size: 16px;
+        }
+    }
+}

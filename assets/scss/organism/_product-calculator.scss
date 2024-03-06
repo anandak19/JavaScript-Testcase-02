@@ -1,0 +1,47 @@
+.product-calculator{
+    &__title{
+        text-align: center;
+        color: #ffffff;
+        line-height: 82px;
+        margin-top: 18px;
+        font-size: 42px;
+
+    }
+
+
+    &__calculator{
+        display: flex;
+        margin: 48px 24px;
+    }
+
+    .input-form{
+        flex: 1;
+    }
+    .total-price{
+        flex: 1;
+    }
+}
+
+@include mobile{
+    .product-calculator{
+        &__title{
+            line-height: 44px;
+            margin-top: 18px;
+            font-size: 32px;
+    
+        }
+    
+    
+        &__calculator{
+            flex-direction: column;
+            margin: 38px 8px;
+        }
+    
+        .input-form{
+            flex: 1;
+        }
+        .total-price{
+            flex: 1;
+        }
+    }
+}
